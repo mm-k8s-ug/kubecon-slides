@@ -1,0 +1,11 @@
+.gradle
+.idea
+build
+out
+
+# for hugo
+public
+
+gradle
+gradlew
+gradlew.bat

@@ -1,0 +1,49 @@
+
+baseURL= "https://mm-k8s-ug.github.io/kubecon-slides"
+languageCode = "en-us"
+title = "KubeCon Slides"
+theme = "meghna-hugo"
+# Google Analytics
+googleAnalytics = "UA-155111419-1"
+
+custom_css = ["css/custom.css"]
+
+[privacy]
+  [privacy.googleAnalytics]
+    anonymizeIP = true
+    disable = false
+    respectDoNotTrack = true
+    useSessionStorage = true
+
+
+# Menu
+[menu]
+
+# Site params
+[params]
+home= "Overview"
+logo = "images/logo.png"
+# Meta data
+description = "Airspace Hugo theme"
+author = "Themefisher"
+
+# footer
+[params.footer]
+    copyright = "Themefisher Team"
+    copyrightURL = "http://www.themefisher.com"
+
+    [[params.footer.socialIcon]]
+    icon = "tf-ion-social-chrome"
+    url = "https://blog.k8smm.org/"
+
+    [[params.footer.socialIcon]]
+    icon = "tf-ion-social-github"
+    url = "https://github.com/mm-k8s-ug"
+
+    [[params.footer.socialIcon]]
+    icon = "tf-ion-social-facebook"
+    url = "https://www.facebook.com/k8smm"
+
+    [[params.footer.socialIcon]]
+    icon = "tf-ion-social-linkedin"
+    url = "https://www.linkedin.com/company/k8smm"
