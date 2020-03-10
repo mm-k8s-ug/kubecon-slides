@@ -14,8 +14,8 @@ import (
 // dnf install ImageMagick-devel
 func main() {
 
-	sourceRootFolder := "/home/sbuerin/code/src/github.com/sbueringer/kubecon-slides/slides"
-	targetRootFolder := "/home/sbuerin/code/src/github.com/sbueringer/kubecon-slides/content"
+	sourceRootFolder := "/home/dther/Templates/mm-k8s-ug/kubecon-slides/slides"
+	targetRootFolder := "/home/dther/Templates/mm-k8s-ug/kubecon-slides/content"
 
 	sourceFileInfos, err := ioutil.ReadDir(sourceRootFolder)
 	if err != nil {
@@ -24,7 +24,7 @@ func main() {
 
 	var sourceFolders []string
 	for _, f := range sourceFileInfos {
-		if f.IsDir() && f.Name() ==  "2019-kubecon-na" {
+		if f.IsDir() && f.Name() == "2019-kubecon-cn" {
 			sourceFolders = append(sourceFolders, path.Join(sourceRootFolder, f.Name()))
 		}
 	}
@@ -49,8 +49,8 @@ func main() {
 		for _, f := range fileInfos {
 			pdfName := path.Join(sourceFolder, f.Name())
 			var imageName string
-			if strings.HasSuffix(f.Name(), ".pdf") {
-				imageName = path.Join(targetFolder, strings.TrimSuffix(f.Name(), ".pdf")+".png")
+			if strings.HasSuffix(f.Name(), ".pptx") {
+				imageName = path.Join(targetFolder, strings.TrimSuffix(f.Name(), ".pptx")+".png")
 			} else {
 				continue
 			}
