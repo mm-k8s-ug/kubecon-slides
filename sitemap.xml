@@ -13,6 +13,11 @@
   </url>
   
   <url>
+    <loc>https://mm-k8s-ug.github.io/kubecon-slides/2019-kubecon-cn/</loc>
+    <lastmod>2019-06-24T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://mm-k8s-ug.github.io/kubecon-slides/2019-kubecon-eu/</loc>
     <lastmod>2019-05-18T12:00:00+01:00</lastmod>
   </url>
